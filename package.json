@@ -1,0 +1,35 @@
+{
+  "name": "photo_gallery",
+  "version": "1.0.0",
+  "description": "Photo Gallery for users",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "build": "babel assets/js/src --outdir assets/js/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmoneta/Photo_Gallery.git"
+  },
+  "keywords": [
+    "gallery",
+    "manager"
+  ],
+  "author": "Mateusz Moneta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmoneta/Photo_Gallery/issues"
+  },
+  "homepage": "https://github.com/mmoneta/Photo_Gallery#readme"
+}
