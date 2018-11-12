@@ -5,13 +5,14 @@
   <div class="offset-md-3 col-md-6 col-xs-12">
     <form id="upload-form" onsubmit="return send('upload_photo');">
       <div class="form-group">
-        <?php
-          echo('<label>'.$lang['category'].'</label><select class="form-control" id="select-category" name="category" required>');
-          foreach ($directories as $directory) {
-            echo('<option>'.$directory.'</option>');
-          }
-          echo('</select>');
-        ?>
+        <label><?= $lang['category'] ?></label>
+        <select class="form-control" id="select-category" name="category" required>
+          <?php 
+            foreach ($directories as $directory) {
+              echo('<option>'.$directory.'</option>');
+            }
+          ?>
+        </select>
       </div>
       <div class="form-group">
         <input type="file" class="form-control" id="file" name="file" required />
